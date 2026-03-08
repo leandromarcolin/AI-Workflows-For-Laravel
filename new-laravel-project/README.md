@@ -46,6 +46,8 @@ Install the packages you have chosen.
 
 Add those packages to the list of tech-stack in `docs/project-description.md`.
 
+For Filament projects, I use and recommend my own package [FilaCheck](https://filamentexamples.com/filacheck) to auto-fix deprecated Filament code from older versions, after AI agent executed the prompt.
+
 ---
 
 ## 5. User Stories to Project Phases. 
