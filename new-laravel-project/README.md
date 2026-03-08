@@ -34,6 +34,8 @@ Run [this user stories prompt](./prompts/prompt-user-stories.md) in Claude Code 
 
 As a result, you should get a new file `docs/user-stories.md`. Review it with AI and/or manually before proceeding.
 
+This step is **very important** for the project outcome, as the question asked by AI agent would help you clarify the choices for tech-stack and code structure, or discover something important before any code is written or packages chosen.
+
 ---
 
 ## 4. Third-Party Packages
@@ -44,29 +46,30 @@ You may consult AI agent with [this prompt](./prompts/prompt-choose-laravel-pack
 
 Install the packages you have chosen.
 
+Run `php artisan boost:install` again to see if any packages have published their AI guidelines/skills for Laravel Boost.
+
 Add those packages to the list of tech-stack in `docs/project-description.md`.
 
 For Filament projects, I use and recommend my own package [FilaCheck](https://filamentexamples.com/filacheck) to auto-fix deprecated Filament code from older versions, after AI agent executed the prompt.
 
 ---
 
-## 5. User Stories to Project Phases. 
-
-Run [this project phases prompt](./prompts/prompt-project-phases.md) in AI agent. As a result, you should get a new file `docs/project-phases.md`. Review it with AI and/or manually.
-
----
-
-## 6. Custom AI Guidelines, Docs, MCPs
+## 5. Custom AI Guidelines and MCPs
 
 If you want to add custom guidelines for Laravel/Filament or other packages, put them now into `.ai/guidelines` folder as Markdown files. Read more in the [docs of Laravel Boost](https://laravel.com/docs/12.x/boost#adding-custom-ai-guidelines).
 
 You can use my own guidelines for [Laravel](./guidelines/laraveldaily-laravel.md) and [Filament](./guidelines/laraveldaily-filament.md). The most important parts are to force AI agent to generate/run Pest tests, and to use [Context7](https://github.com/upstash/context7) as a fallback for docs in case of Laravel Boost failure (*that happens rarely*).
 
-Run `php artisan boost:install` again to see if any packages have published their AI guidelines/skills for Laravel Boost.
-
 Also here, add any MCP servers you want to use. I personally don't use anything except for Context7, mentioned above.
 
 ---
+
+## 6. User Stories to Project Phases
+
+Run [this project phases prompt](./prompts/prompt-project-phases.md) in AI agent. As a result, you should get a new file `docs/project-phases.md`. Review it with AI and/or manually.
+
+---
+
 
 ## 7. Start Prompting to Write Code
 
