@@ -24,7 +24,7 @@ Initialize Git repository and commit this initial skeleton.
 
 If your project needs admin panel, install it right away, as it's a fundamental architectural package. My personal favorite is [Filament](https://filamentphp.com/), so I would install it now, so that Laravel Boost would get its guidelines. After installing Filament, re-run `php artisan boost:install`.
 
-Add Filament as a choice into `docs/project-description.md`, in the tech-stack choice section.
+Add Filament as a choice into `docs/project-description.md`, in the tech-stack choice section, if it's not mentioned there.
 
 ---
 

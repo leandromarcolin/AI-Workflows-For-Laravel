@@ -1,4 +1,4 @@
-Look at the project description at @docs/project-description.md and suggest Laravel packages that may be useful for this project, in addition to the default Laravel starter kit and Filament adminpanel.
+Look at the project description at @docs/project-description.md and user stories @docs/user-stories.md and suggest Laravel packages that may be useful for this project, in addition to the default Laravel starter kit and Filament adminpanel.
 
 Requirements for packages:
 - Support current Laravel version of this project
